@@ -18,7 +18,7 @@ Clone this repo :
 And then execute :
 `$ bundle install`
 
-Finally to run scheduker :
+Finally to run scheduler :
 `ruby lib/scheduler.rb`
 
 ## 👨‍💻 Contributing
