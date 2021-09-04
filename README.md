@@ -15,10 +15,10 @@ For that I used the open data of the SNCF : https://ressources.data.sncf.com/exp
 Clone this repo :
 `$ git clone git@github.com:theodugautier/twitter-objets-trouves-sncf.git`
 
-And then execute:
+And then execute :
 `$ bundle install`
 
-Or install it yourself as:
+Finally to run scheduker :
 `ruby lib/scheduler.rb`
 
 ## 👨‍💻 Contributing
