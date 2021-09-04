@@ -12,5 +12,6 @@ gem 'rubocop', '~> 1.7'
 gem 'rufus-scheduler'
 gem 'twitter'
 gem 'webmock'
+gem 'sqlite3'
 
 gem 'simplecov', require: false, group: :test
