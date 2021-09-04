@@ -19,11 +19,17 @@ scheduler.in '1s' do
 
   objects.each do |object|
     instance = Sncf::Object.new(object: object)
-    if db.find(recordid: instance.record_id).count == 0
-      result = db.insert_one( { recordid: instance.record_id } )
-      tweet = "Un nouvel objet perdu dans un train vient d\'être ramené à un guichet SNCF ! \nType : #{instance.type} \nTrouvé à #{instance.train_station_name} le #{instance.hour} \n#ObjetsTrouvésSncf #" + instance.city.gsub('-', '')
+    next unless db.find(recordid: instance.record_id).count.zero?
 
-      TwitterHandler::SendTweet.new(tweet: tweet, lat: instance.station.lat, long: instance.station.long).call if result.n == 1
+    result = db.insert_one({ recordid: instance.record_id })
+    tweet = "Un nouvel objet perdu dans un train vient d\'être ramené à un guichet SNCF !"\
+            "\nType : #{instance.type} \n"\
+            "Trouvé à #{instance.train_station_name} le #{instance.hour} \n"\
+            '#ObjetsTrouvésSncf #' + instance.city.gsub('-', '')
+
+    if result.n == 1
+      TwitterHandler::SendTweet.new(tweet: tweet, lat: instance.station.lat,
+                                    long: instance.station.long).call
     end
   end
 end

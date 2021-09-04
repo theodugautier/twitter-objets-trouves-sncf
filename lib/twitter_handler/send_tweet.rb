@@ -5,6 +5,7 @@ module TwitterHandler
     attr_reader :tweet, :lat, :long
 
     def initialize(tweet:, lat:, long:)
+      super
       @tweet = tweet
       @lat = lat
       @long = long
@@ -12,7 +13,7 @@ module TwitterHandler
 
     def call
       p "#{tweet}, #{lat}, #{long}"
-      # client.update("I'm tweeting with @gem!", lat: 37.7821120598956, long: -122.400612831116, display_coordinates: true)
+      # client.update(tweet, lat: lat, long: long, display_coordinates: true)
     end
   end
 end
