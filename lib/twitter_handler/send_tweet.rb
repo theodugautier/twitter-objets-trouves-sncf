@@ -12,8 +12,7 @@ module TwitterHandler
     end
 
     def call
-      p "#{tweet}, #{lat}, #{long}"
-      # client.update(tweet, lat: lat, long: long, display_coordinates: true)
+      client.update(tweet, lat: lat, long: long, display_coordinates: true)
     end
   end
 end
