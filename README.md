@@ -17,16 +17,24 @@ Requirements :
 - Ruby 2.7.4
 
 Clone this repo :
-`$ git clone git@github.com:theodugautier/twitter-objets-trouves-sncf.git`
+```
+$ git clone git@github.com:theodugautier/twitter-objets-trouves-sncf.gi
+```
 
 Put your environment variables in the `.env` file (sqlite3 and twitter api's keys) :
-`$ cp .env.example .env`
+```
+$ cp .env.example .env
+```
 
 And then execute :
-`$ bundle install`
+```
+$ bundle install
+```
 
 Finally to run scheduler :
-`ruby lib/scheduler.rb`
+```
+ruby lib/scheduler.rb
+```
 
 ## 👨‍💻 Contributing
 
