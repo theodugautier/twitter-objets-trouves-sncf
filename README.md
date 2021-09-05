@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=LeonardSSH.vscord" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.twitter.com/sncfobjets " target="_blank" rel="noopener noreferrer">
     <img width="256" src="https://imgur.com/d0LOjFS" alt="SNCF Bot Logo">
   </a>
 </p>
