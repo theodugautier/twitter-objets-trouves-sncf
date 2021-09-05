@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 
-require 'mongo'
+require 'sqlite3'
+require 'dotenv/load'
 
-module MongoHandler
+module DatabaseHandler
   class Connect
     attr_reader :client
 
     def initialize
-      @client = Mongo::Client.new(['localhost:27017'], database: 'objects')
+      @client = SQLite3::Database.new(ENV['DATABASE_NAME'])
     end
 
     def objects
