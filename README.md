@@ -12,8 +12,15 @@ For that I used the open data of the SNCF : https://ressources.data.sncf.com/exp
 
 ## 📥 Installation
 
+Requirements :
+- Sqlite3
+- Ruby 2.7.4
+
 Clone this repo :
 `$ git clone git@github.com:theodugautier/twitter-objets-trouves-sncf.git`
+
+Put your environment variables in the `.env` file (sqlite3 and twitter api's keys) :
+`$ cp .env.example .env`
 
 And then execute :
 `$ bundle install`
