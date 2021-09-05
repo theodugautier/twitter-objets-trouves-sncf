@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.twitter.com/sncfobjets " target="_blank" rel="noopener noreferrer">
-    <img width="256" src="https://imgur.com/d0LOjFS" alt="SNCF Bot Logo">
+    <img width="256" src="https://i.imgur.com/d0LOjFS.png" alt="SNCF Bot Logo">
   </a>
 </p>
 
